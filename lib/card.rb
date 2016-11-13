@@ -7,9 +7,11 @@ class Card
     is_ace?
   end
 
+  def card_id
+    "#{@suit}#{@value}"
+  end
+
   def is_face?
-    # face = ['J', 'K', 'Q']
-    # face.include?(@value)
     @value == "J" || @value == "K" || @value == "Q"
   end
 
